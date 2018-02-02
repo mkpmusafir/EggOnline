@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_your_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bthrust.eggonline.eggOnline.YourOrderActivity">
+
+    <include layout="@layout/toolbar_layout"></include>
+    <LinearLayout
+        android:id="@+id/mainSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="55dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/cartList_productNameText"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:background="@drawable/edit_shape"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:text="Product " />
+
+        <TextView
+            android:id="@+id/cart_countText"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight=".4"
+            android:gravity="center"
+            android:text="Qnty"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cartList_Amount"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight=".6"
+            android:gravity="center"
+            android:text="Amount"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addcart_list_recyclerView"
+        android:layout_below="@+id/mainSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:background="@color/backcolor"
+                android:gravity="center_vertical"
+                android:text="Payment Option"/>
+
+            <RadioGroup
+                android:id="@+id/paymentMode_GRP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/checkPayment_RB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque Payment" />
+
+                <RadioButton
+                    android:id="@+id/cashonDelivery_RB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Cash on delivery" />
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/paymentMode_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="payment"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/edit_shape"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Subtotal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtotalAmount"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:background="@color/linecolor"
+                android:text="0"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/edit_shape"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Total"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text="0"
+                android:background="@color/linecolor"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/placeOrder_BTN"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center_vertical"
+                android:text="Place Order"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp1" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_Home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/nav_account"
+            android:title="My Account"
+            android:icon="@drawable/ic_user"
+            />
+
+        <item
+            android:id="@+id/nav_myorder"
+            android:title="My Order"
+            android:icon="@drawable/ic_myorder"/>
+    </group>
+
+
+</menu>

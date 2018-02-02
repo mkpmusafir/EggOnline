@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_order"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="bthrust.eggonline.eggOnline.MyOrderActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/my_orderSection"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/backcolor"
+        android:weightSum="4">
+        <TextView
+            android:id="@+id/myorder_slNo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:background="@drawable/myborder_shape"
+            android:text="Sl_No."/>
+        <TextView
+            android:id="@+id/myOrder_quantity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/myborder_shape"
+            android:text="Quantity"/>
+        <TextView
+            android:id="@+id/myOrder_Date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:background="@drawable/myborder_shape"
+            android:text="Date"/>
+        <TextView
+            android:id="@+id/myOrder_Amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/myborder_shape"
+            android:text="Amount"/>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
