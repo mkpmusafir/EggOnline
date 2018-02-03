@@ -179,7 +179,7 @@ public class OrderViewActivity extends AppCompatActivity {
 
         viewPrice_text.setText("$" + price);
         product_NameText.setText(productName);
-        loadDescription.setText(""+description);
+        loadDescription.setText(""+Html.fromHtml(description));
 
         cartNumber = Integer.parseInt(add_CardNumberView.getText().toString());
 

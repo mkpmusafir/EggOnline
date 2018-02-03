@@ -85,7 +85,7 @@
                 <RelativeLayout
                     android:id="@+id/viewPaggerImage"
                     android:layout_width="match_parent"
-                    android:layout_height="225dp">
+                    android:layout_height="300dp">
                     <android.support.v4.view.ViewPager
                         android:id="@+id/pager"
                         android:layout_width="match_parent"
@@ -94,7 +94,7 @@
                     <me.relex.circleindicator.CircleIndicator
                         android:id="@+id/indicator"
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                        android:layout_height="50dp"
                         android:background="#26000000"
                         android:layout_alignParentBottom="true"/>
                 </RelativeLayout>
@@ -108,7 +108,7 @@
                     android:id="@+id/viewPrice_text"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:paddingLeft="10dp"
+                    android:paddingLeft="20dp"
                     android:text="$105.00"
                     android:gravity="center_vertical"
                     android:textColor="@android:color/black"
@@ -119,8 +119,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="$205"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         android:id="@+id/priceText"
                         android:gravity="center_vertical"
                         android:visibility="gone"
@@ -164,9 +164,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:paddingLeft="10dp"
+                    android:paddingLeft="20dp"
                     android:text="COOKED QUAIL EGGS"
-                    android:textSize="17sp" />
+                    android:textSize="20sp" />
 
 
 
@@ -180,12 +180,12 @@
                 <TextView
                     android:id="@+id/addCart_text"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="45dp"
                     android:layout_marginTop="10dp"
                     android:background="@color/colorPrimary"
                     android:gravity="center"
                     android:text="ADD TO CART"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textColor="@android:color/white"
                     android:visibility="visible" />
 
@@ -195,7 +195,7 @@
                 <LinearLayout
                     android:id="@+id/addMoreCart_Text"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="45dp"
                     android:layout_marginTop="10dp"
                     android:background="@color/colorPrimary"
                     android:gravity="center"
@@ -219,7 +219,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="1"
-                        android:textSize="18sp"
+                        android:textSize="20sp"
                         android:textColor="@android:color/white" />
 
                     <ImageView
@@ -260,6 +260,7 @@
                     android:layout_height="wrap_content"
                     android:padding="5dp"
                     android:text="Description"
+                    android:layout_marginLeft="20dp"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20sp" />
 
@@ -273,7 +274,7 @@
                     android:id="@+id/loadDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:lineSpacingMultiplier="1.1"
                     />
                 </LinearLayout>
@@ -282,8 +283,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:textSize="17sp"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
                 android:text="Same Brand"/>
             <View
                 android:layout_width="match_parent"
